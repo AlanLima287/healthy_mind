@@ -9,7 +9,7 @@
 }
 
 :root {
-   --clr-lgh-0: #FFFFFF;
+   --clr-lgh-0: #ffffff;
    --clr-lgh-1: #c1d6f7;
    --clr-lgh-2: #99c0e4;
 
@@ -17,9 +17,9 @@
    --clr-drk-1: #1f0a52;
    --clr-drk-2: #180b86;
    --clr-drk-3: #45385c;
-
-   --clr-acc-0: #FFA618;
-   --clr-acc-1: #968C5C;
+   
+   --clr-acc-0: #ffa618;
+   --clr-acc-1: #968c5c;
 
    --default-padding: .6rem .8rem;
 }
@@ -46,8 +46,8 @@ header {
    padding: var(--default-padding);
 }
 
-header picture {
-   background-image: url(./assets/logo_large.png);
+header .logo {
+   background-image: url(../assets/logo_large.png);
    background-size: contain;
    aspect-ratio: 25 / 9;
    height: 3rem;
@@ -81,6 +81,17 @@ section {
    display: flex;
    flex-direction: column;
    overflow-y: auto;
+}
+
+main {
+   flex-grow: 1;
+}
+
+.error {
+   display: grid;
+   font-size: xx-large;
+   place-content: center;
+   text-align: center;
 }
 
 article {
@@ -145,7 +156,7 @@ footer .license {
 
 @media only screen and (max-width: 600px) {
    header picture {
-      background-image: url(./assets/logo_small.png);
+      background-image: url(../assets/logo_small.png);
       aspect-ratio: 1 / 1;
    }
 
