@@ -10,14 +10,14 @@
 
 :root {
    --clr-lgh-0: #ffffff;
-   --clr-lgh-1: #c1d6f7;
-   --clr-lgh-2: #99c0e4;
+   --clr-lgh-1: #f1ebff;
+   --clr-lgh-2: #7fb7ff;
 
    --clr-drk-0: #0d0818;
    --clr-drk-1: #1f0a52;
    --clr-drk-2: #180b86;
    --clr-drk-3: #45385c;
-   
+
    --clr-acc-0: #ffa618;
    --clr-acc-1: #968c5c;
 
@@ -27,9 +27,11 @@
 body {
    display: grid;
    grid-template-rows: auto 1fr;
-   background-color: var(--clr-lgh-0);
+   background-color: var(--clr-lgh-1);
    height: 100dvh;
 }
+
+/* Some resets */
 
 a {
    text-decoration: none;
@@ -38,6 +40,8 @@ a {
 ul {
    list-style: none;
 }
+
+/* Header style */
 
 header {
    display: grid;
@@ -77,11 +81,14 @@ nav a:active {
    color: var(--clr-acc-0);
 }
 
+/* Main section style */
+
 section {
    display: flex;
    flex-direction: column;
    overflow-y: auto;
 }
+
 
 main {
    flex-grow: 1;
@@ -94,21 +101,113 @@ main {
    text-align: center;
 }
 
+.slogan {
+   display: flex;
+   flex-direction: column;
+   color: var(--clr-drk-1);
+   align-items: center;
+   text-align: center;
+   padding: 1rem 0;
+}
+
+.slogan h1 {
+   color: var(--clr-drk-1);
+}
+
+.slogan picture {
+   display: grid;
+   position: relative;
+   place-items: center;
+   background-size: contain;
+   background-image: url(../assets/logo_small_colored.png);
+   aspect-ratio: 1 / 1;
+   margin: .25rem 0;
+   height: 1.75rem;
+}
+
+.slogan picture::before,
+.slogan picture::after {
+   content: "";
+   position: absolute;
+   aspect-ratio: 30 / 1;
+   background-color: var(--clr-drk-1);
+   height: .125rem;
+}
+
+.slogan picture::before {
+   translate: -100% 0;
+}
+
+.slogan picture::after {
+   translate: 100% 0;
+}
+
 article {
    display: grid;
    padding: .6rem 2rem;
    gap: .6rem;
 }
 
-article p {
+article:nth-of-type(2n) {
+   background-color: var(--clr-drk-3);
+}
+
+article:nth-of-type(2n) * {
+   color: var(--clr-lgh-1);
+}
+
+/* Normal text style */
+
+article.text p {
    text-align: justify;
 }
 
-article img {
-   float: right;
+article.text p .figure {
    display: block;
-   margin: var(--default-padding);
+   height: 15.5rem;
 }
+
+article.text p .figure.left {
+   float: left;
+   margin: 0 1rem 0 0;
+}
+
+article.text p .figure.right {
+   float: right;
+   margin: 0 0 0 1rem;
+}
+
+/* Where and when to find us style */
+
+article.table {
+   grid-template-columns: auto 1fr;
+   gap: 1rem;
+}
+
+article h1 {
+   grid-column: span 2;
+}
+
+article .address {
+   display: none;
+}
+
+.schedule {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-content: center;
+   align-self: start;
+   gap: 1rem;
+}
+
+.map {
+   display: block;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 100%;
+}
+
+/* Footer style */
 
 footer {
    background-color: var(--clr-drk-0);
@@ -154,18 +253,33 @@ footer .license {
    background-color: var(--clr-drk-2);
 }
 
-@media only screen and (max-width: 600px) {
-   header picture {
+@media only screen and (max-width: 650px) {
+   header .logo {
       background-image: url(../assets/logo_small.png);
       aspect-ratio: 1 / 1;
    }
 
    article {
-      grid-template-columns: none;
+      grid-template-columns: none !important;
    }
 
    article h1 {
       grid-column: auto;
+   }
+
+   article .address {
+      display: block;
+   }
+
+   article.text p {
+      display: flex;
+      flex-direction: column;
+   }
+
+   article.text p .figure {
+      float: none !important;
+      margin: 0 !important;
+      align-self: center;
    }
 
    footer .teams {
