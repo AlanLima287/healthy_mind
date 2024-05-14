@@ -5,11 +5,30 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="./assets/icon.png" type="image/png">
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./style/style.css">
    <title>Healthy Mind</title>
+
+   <script type="module" src="./script/main.js"></script>
 </head>
 
 <body>
+
+   <menu>
+      <select id="theme"></select>
+      <span>
+         <input type="color" id="lgh-0">
+         <input type="color" id="lgh-1">
+         <input type="color" id="lgh-2">
+
+         <input type="color" id="drk-0">
+         <input type="color" id="drk-1">
+         <input type="color" id="drk-2">
+         <input type="color" id="drk-3">
+
+         <input type="color" id="acc-0">
+         <input type="color" id="acc-1">
+      </span>
+   </menu>
 
    <header>
 
@@ -41,7 +60,7 @@
             <h1>Healthy Mind</h1>
 
             <p>
-               <img src="./assets/icon.png" class="figure left" alt="HealthyMind">
+               <img src="./assets/logo_small.png" class="figure left" alt="HealthyMind">
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis et deserunt consectetur voluptatem
                assumenda molestias suscipit fuga ipsum, pariatur voluptas, est nihil laudantium magni consequatur ab
                modi autem dolorum quasi fugiat tempore, exercitationem commodi. Officia suscipit mollitia quaerat
@@ -92,19 +111,23 @@
 
             <h1 class="address">Onde nos encontrar</h1>
 
-            <iframe class="figure right map"
+            <div class="figure right map"></div>
+
+            <!-- <iframe class="figure right map"
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7580.29446796507!2d-43.57963568056143!3d-18.203156623166638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaeb8550409243d%3A0x8ed87b6d6de8811f!2sUniversidade%20Federal%20dos%20Vales%20do%20Jequitinhonha%20e%20Mucuri%20-%20UFVJM%20-%20Campus%20JK!5e0!3m2!1sen!2sbr!4v1715613496676!5m2!1sen!2sbr"
                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            </iframe> -->
 
          </article>
 
          <article class="text">
             <h1>Something else</h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis veritatis corrupti? Qui animi
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis veritatis corrupti? Qui animi
                ratione dolor distinctio veritatis quis reiciendis impedit iure commodi sequi, sunt, illum maiores vero,
-               ad aut?</p>
+               ad aut?
+            </p>
          </article>
 
       </main>

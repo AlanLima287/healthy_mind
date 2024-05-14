@@ -43,6 +43,10 @@ ul {
 
 /* Header style */
 
+menu {
+   background-color: var(--clr-drk-1);
+}
+
 header {
    display: grid;
    background-color: var(--clr-drk-1);
@@ -164,7 +168,10 @@ article.text p {
 
 article.text p .figure {
    display: block;
+   background-color: var(--clr-drk-2);
+   border-radius: 1rem;
    height: 15.5rem;
+   padding: 2rem;
 }
 
 article.text p .figure.left {
