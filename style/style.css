@@ -43,10 +43,6 @@ ul {
 
 /* Header style */
 
-menu {
-   background-color: var(--clr-drk-1);
-}
-
 header {
    display: grid;
    background-color: var(--clr-drk-1);
@@ -83,6 +79,31 @@ nav a:hover {
 
 nav a:active {
    color: var(--clr-acc-0);
+}
+
+.palette {
+   visibility: hidden;
+   position: absolute;
+   background-color: var(--clr-acc-1);
+   border-radius: .4rem;
+   transition: .2s;
+   padding: .5rem;
+   opacity: 0;
+}
+
+.palette span {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.color:hover+.palette {
+   visibility: visible;
+   opacity: 1;
+}
+
+.palette:hover {
+   visibility: visible;
+   opacity: 1;
 }
 
 /* Main section style */
