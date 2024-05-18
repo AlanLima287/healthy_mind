@@ -13,18 +13,12 @@ const inputs = [
 
 const color_scheme = {
    selected: false,
-   themes: {
-      "old_times": ["#ffffff", "#f1ebff", "#7fb7ff", "#0d0818", "#1f0a52", "#180b86", "#45385c", "#ffa618", "#968c5c"],
-      "modern": ["#ffffff", "#ffffff", "#4a8fe8", "#000000", "#001122", "#205f7e", "#444e5a", "#1a75ff", "#5b7495"],
-      "dream_of_sky": ["#ffffff", "#f0f7ff", "#203a97", "#092543", "#5a8dc4", "#5a8dc4", "#90afd0", "#ffa618", "#968c5c"],
-      "gaia's_dance": ["#ffffff", "#f0fff0", "#97d39e", "#011f00", "#257e2f", "#385c39", "#385c39", "#ffa618", "#968c5c"],
-      "hotdog": ["#ffff00", "#ffcb3d", "#ff7300", "#ff0000", "#ff0000", "#ff7700", "#ff4000", "#ffa618", "#968c5c"]
-   }
+   themes: {}
 }
 
 async function setup() {
 
-   //color_scheme.themes = await fetch('./assets/themes.json').then(res => res.json())
+   color_scheme.themes = await fetch('./assets/themes.json').then(res => res.json())
 
    for (const theme in color_scheme.themes) {
       const option = document.createElement('option')
@@ -33,7 +27,7 @@ async function setup() {
       select.append(option)
    }
 
-   set_theme('old_times')
+   set_theme('modern')
    select.addEventListener('input', evt => { set_theme(evt.target.value) })
 
    for (let i = 0; i < inputs.length; i++) {

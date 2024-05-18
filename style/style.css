@@ -6,6 +6,7 @@
    box-sizing: border-box;
    font-family: 'Open Sans', 'Futura Std', Helvetica, 'Arial', sans-serif;
    color: var(--clr-drk-0);
+   cursor: default;
 
    /* outline: 1px dashed #070; */
 }
@@ -37,6 +38,7 @@ body {
 
 a {
    text-decoration: none;
+   cursor: pointer;
 }
 
 ul {
