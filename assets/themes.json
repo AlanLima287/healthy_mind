@@ -6,5 +6,11 @@
    "end_of_file": ["#ffffff","#fcf5ff","#ccd397","#1f1800","#777432","#7c6d7e","#6f5e1f","#c89fd5","#5e5431"],
    "dream_of_sky": ["#ffffff","#fafcff","#a7b6ec","#092543","#3873b2","#7db1e8","#627a93","#1ad1ff","#aabacb"],
    "red_coal_carpet": ["#ffffff","#fdffff","#dfc7b3","#4e0e0e","#8a0000","#8c212c","#864841","#a2720b","#84664d"],
-   "a_fish's_gambit": ["#ffffff","#fffcfa","#eedfce","#6d4622","#b8904c","#ceab6f","#ba945e","#e2c28d","#d9b18c"]
+   "a_fish's_gambit": ["#ffffff","#fffcfa","#eedfce","#6d4622","#b8904c","#ceab6f","#ba945e","#e2c28d","#d9b18c"],
+
+   "the_whale's_tale_old": ["#ffffff","#fffcfa","#0bcba5","#1f2d2b","#3b7d81","#264ac9","#539387","#1affa7","#5b9589"],
+   "the_miller_old": ["#ffffff","#f5fbff","#9fbed6","#3e1a0e","#79311a","#7692a7","#917d59","#fff01a","#968c5c"],
+   "red_coal_carpet_old": ["#ffffff","#f5feff","#dfc7b3","#420000","#5c1010","#700000","#864841","#b39147","#84664d"],
+   "a_fish's_gambit_old": ["#ffffff","#fffcfa","#eedfce","#34240f","#a46932","#ceab6f","#ba945e","#e2c28d","#d9b18c"],
+   "the_solstice_old": ["#ffffff","#f5fbff","#9fbed6","#3e1a0e","#79311a","#7692a7","#917d59","#fff01a","#968c5c"]
 }

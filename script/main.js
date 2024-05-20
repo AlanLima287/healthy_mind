@@ -13,19 +13,29 @@ const inputs = [
 
 const color_scheme = {
    selected: false,
-   themes: {}
+   themes: {},
+   deprecated_themes: {}
 }
 
 async function setup() {
 
    color_scheme.themes = await fetch('./assets/themes.json').then(res => res.json())
 
+   const [cur, old] = [document.createElement('optgroup'), document.createElement('optgroup')]
+   cur.label = "True Themes"
+   old.label = "Deprecated Themes"
+
    for (const theme in color_scheme.themes) {
       const option = document.createElement('option')
       option.textContent = theme.replaceAll('_', ' ')
       option.value = theme
-      select.append(option)
+
+      if (theme.endsWith('_old')) old.append(option)
+      else cur.append(option)
    }
+
+   select.append(cur)
+   select.append(old)
 
    set_theme('modern')
    select.addEventListener('input', evt => { set_theme(evt.target.value) })
