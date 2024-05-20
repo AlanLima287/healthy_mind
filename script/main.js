@@ -27,11 +27,15 @@ async function setup() {
 
    for (const theme in color_scheme.themes) {
       const option = document.createElement('option')
-      option.textContent = theme.replaceAll('_', ' ')
       option.value = theme
 
-      if (theme.endsWith('_old')) old.append(option)
-      else cur.append(option)
+      if (theme.endsWith('_old')) {
+         option.textContent = theme.replaceAll('_old', '').replaceAll('_', ' ')
+         old.append(option)
+      } else {
+         option.textContent = theme.replaceAll('_', ' ')
+         cur.append(option)
+      }
    }
 
    select.append(cur)
