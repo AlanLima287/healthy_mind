@@ -1,11 +1,10 @@
 {
    "modern": ["#ffffff","#ffffff","#4a8fe8","#000000","#000f1f","#205f7e","#444e5a","#1a75ff","#5b7495"],
-   "bright_diamond": ["#ffffff","#fffdfa","#0bcba5","#1f2d2b","#366063","#65b8aa","#445a56","#1affa7","#5b9589"],
    "old_times": ["#ffffff","#f1ebff","#7fb7ff","#0d0818","#1f0a52","#180b86","#45385c","#ffa618","#968c5c"],
-   "gaia's_dance": ["#ffffff","#f0fff0","#97d39e","#011f00","#257e2f","#1d7c69","#385c39","#ffa618","#5e4731"],
-   "the_miller": ["#ffffff","#f5fbff","#9fbed6","#3e1a0e","#79311a","#7692a7","#917d59","#fff01a","#968c5c"],
-   "end_of_file": ["#ffffff","#fcf5ff","#ccd397","#1f1800","#777432","#8c7b8e","#6f5e1f","#9f6db0","#5e5431"],
+   "gaia's_dance": ["#ffffff","#f5fcff","#97d39e","#011f00","#257e2f","#1d7c69","#385c39","#ffa618","#5e4731"],
+   "the_miller": ["#ffffff","#fafdff","#9fbed6","#3e1a0e","#885932","#7692a7","#bb9566","#e4dd86","#79311a"],
+   "end_of_file": ["#ffffff","#fcf5ff","#ccd397","#1f1800","#777432","#7c6d7e","#6f5e1f","#c89fd5","#5e5431"],
    "dream_of_sky": ["#ffffff","#fafcff","#a7b6ec","#092543","#3873b2","#7db1e8","#627a93","#1ad1ff","#aabacb"],
-   "red_coal_carpet": ["#ffffff","#f5feff","#dfc7b3","#420000","#5c1010","#700000","#864841","#b39147","#84664d"],
-   "a_fish's_gambit": ["#ffffff","#fffcfa","#eedfce","#34240f","#a46932","#ceab6f","#ba945e","#e2c28d","#d9b18c"]
+   "red_coal_carpet": ["#ffffff","#fdffff","#dfc7b3","#4e0e0e","#8a0000","#8c212c","#864841","#a2720b","#84664d"],
+   "a_fish's_gambit": ["#ffffff","#fafffe","#eedfce","#492b12","#df7e30","#f37712","#bf883b","#8de2ae","#d9b18c"]
 }
