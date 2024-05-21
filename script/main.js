@@ -41,7 +41,7 @@ async function setup() {
    select.append(cur)
    select.append(old)
 
-   set_theme('modern')
+   set_theme('old_times')
    select.addEventListener('input', evt => { set_theme(evt.target.value) })
 
    for (let i = 0; i < inputs.length; i++) {
