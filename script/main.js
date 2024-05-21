@@ -22,8 +22,8 @@ async function setup() {
    color_scheme.themes = await fetch('./assets/themes.json').then(res => res.json())
 
    const [cur, old] = [document.createElement('optgroup'), document.createElement('optgroup')]
-   cur.label = "True Themes"
-   old.label = "Deprecated Themes"
+   cur.label = "Temas verdadeiros"
+   old.label = "Temas descontinuados"
 
    for (const theme in color_scheme.themes) {
       const option = document.createElement('option')
