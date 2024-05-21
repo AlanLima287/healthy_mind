@@ -5,7 +5,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Open Sans', 'Futura Std', Helvetica, 'Arial', sans-serif;
-   color: var(--clr-drk-0);
+   color: var(--clr-acc-1);
    cursor: default;
 
    /* outline: 1px dashed #070; */
@@ -21,7 +21,7 @@
    --clr-drk-2: #180b86;
    --clr-drk-3: #45385c;
 
-   --clr-acc-0: #ffa618;
+   --clr-acc-0: #6a45bf;
    --clr-acc-1: #968c5c;
 
    --default-padding: .6rem .8rem;
@@ -88,7 +88,7 @@ nav a:active {
 .palette {
    visibility: hidden;
    position: absolute;
-   background-color: var(--clr-acc-1);
+   background-color: var(--clr-acc-0);
    border-radius: .4rem;
    transition: .2s;
    padding: .5rem;
