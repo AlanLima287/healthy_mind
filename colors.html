@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
    <meta charset="UTF-8">
@@ -16,7 +16,7 @@
    <header>
 
       <a class="logo" href="./"></a>
-      
+
       <nav>
          <a href="./">Página Inicial</a>
          <a href="./error.html">Página de Erro</a>
@@ -30,48 +30,54 @@
 
       <main class="colors">
 
-         <script>
+         <h1>Old Times</h1>
 
-            const color_display = document.querySelector('.colors')
-            const colors = [
-               ["#1f0a52", "Violeta índigo", "https://64.media.tumblr.com/84b733c88fbeb9d4b4e45c3577ecbb31/tumblr_pppzhbhOcE1vh8dx0_1280.jpg"],
-               ["#3b139d", "Índigo", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVhoDjN-ScKGYrIxJLOHP7nVqEtrNoYI1G4t2TOUU8JWSZo2ZAAW-95fFOgXeuXAoUkc&usqp=CAU"],
-               ["#28203c", "Roxo espacial", "https://i.pinimg.com/736x/53/93/a1/5393a1145379466f92ff8b285211d714.jpg"],
-               ["#0c0421", "Céu noturno", "https://live.staticflickr.com/5211/5426098481_503b16b14b_z.jpg"],
-               ["#0d0818", "Preto rico", "https://png.pngtree.com/background/20230611/original/pngtree-dark-purple-flowers-against-a-black-background-picture-image_3164459.jpg"],
-               ["#c8b4f6", "Azul lavanda", "https://hips.hearstapps.com/hmg-prod/images/meadow-of-lavender-nature-composition-selective-royalty-free-image-539988160-1533825462.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"],
-               ["#8b81a3", "Prata Romana", "https://i0.wp.com/blog.tepapa.govt.nz/wp-content/uploads/2018/04/NU002278-Denarius-2-BC-circa-13-AD-Unknown-silver-1.jpg?resize=610%2C640&ssl=1"],
-               ["#906aed", "Lavanda", "https://www.lovethegarden.com/sites/default/files/styles/og_image/public/content/articles/How%20to%20grow%20Lavender%20.jpg?itok=mNp-frtr"],
-               ["#f1ebff", "Magnólia", "https://www.gardenia.net/wp-content/uploads/2023/05/Magnolia-denudata-Yulan-Magnolia-780x520.webp"],
-               ["#ffffff", "Branco", "https://i.pinimg.com/originals/b4/a0/22/b4a02298075d16ce14b83bfac5d192b4.jpg"],
-            ]
+         <article>
 
-            for (let i = 0; i < colors.length; i++) {
-               const color = document.createElement('div')
-               const spans = [document.createElement('span'), document.createElement('span')]
+            <script>
 
-               spans[0].style.backgroundImage = `url(${colors[i][2]})`
-               color.style.backgroundColor = colors[i][0]
+               const color_display = document.querySelector('.colors article')
+               const colors = [
+                  ["#1f0a52", "Violeta índigo", "https://64.media.tumblr.com/84b733c88fbeb9d4b4e45c3577ecbb31/tumblr_pppzhbhOcE1vh8dx0_1280.jpg"],
+                  ["#3b139d", "Índigo", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVhoDjN-ScKGYrIxJLOHP7nVqEtrNoYI1G4t2TOUU8JWSZo2ZAAW-95fFOgXeuXAoUkc&usqp=CAU"],
+                  ["#28203c", "Roxo espacial", "https://i.pinimg.com/736x/53/93/a1/5393a1145379466f92ff8b285211d714.jpg"],
+                  ["#0c0421", "Céu noturno", "https://live.staticflickr.com/5211/5426098481_503b16b14b_z.jpg"],
+                  ["#0d0818", "Preto rico", "https://png.pngtree.com/background/20230611/original/pngtree-dark-purple-flowers-against-a-black-background-picture-image_3164459.jpg"],
+                  ["#c8b4f6", "Azul lavanda", "https://hips.hearstapps.com/hmg-prod/images/meadow-of-lavender-nature-composition-selective-royalty-free-image-539988160-1533825462.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"],
+                  ["#8b81a3", "Prata Romana", "https://i0.wp.com/blog.tepapa.govt.nz/wp-content/uploads/2018/04/NU002278-Denarius-2-BC-circa-13-AD-Unknown-silver-1.jpg?resize=610%2C640&ssl=1"],
+                  ["#906aed", "Lavanda", "https://www.lovethegarden.com/sites/default/files/styles/og_image/public/content/articles/How%20to%20grow%20Lavender%20.jpg?itok=mNp-frtr"],
+                  ["#f1ebff", "Magnólia", "https://www.gardenia.net/wp-content/uploads/2023/05/Magnolia-denudata-Yulan-Magnolia-780x520.webp"],
+                  ["#ffffff", "Branco", "https://i.pinimg.com/originals/b4/a0/22/b4a02298075d16ce14b83bfac5d192b4.jpg"],
+               ]
 
-               const [r, g, b] = colors[i][0].match(/\w{2}/g).map(hex => parseInt(hex, 16))
-               const contrast = ((Math.min(r, g, b) + Math.max(r, g, b)) < 0x100) ? '#fff' : '#000'
+               for (let i = 0; i < colors.length; i++) {
+                  const color = document.createElement('div')
+                  const spans = [document.createElement('span'), document.createElement('span')]
 
-               spans[0].style.borderBlockColor = contrast
-               spans[0].style.color = contrast
-               spans[1].style.color = contrast
+                  spans[0].style.backgroundImage = `url(${colors[i][2]})`
+                  color.style.backgroundColor = colors[i][0]
 
-               spans[0].textContent = colors[i][1]
-               spans[1].textContent = colors[i][0]
+                  const [r, g, b] = colors[i][0].match(/\w{2}/g).map(hex => parseInt(hex, 16))
+                  const contrast = ((Math.min(r, g, b) + Math.max(r, g, b)) < 0x100) ? '#fff' : '#000'
 
-               spans[1].addEventListener('click', async evt => {
-                  await navigator.clipboard.writeText(evt.target.textContent)
-               })
+                  spans[0].style.borderBlockColor = contrast
+                  spans[0].style.color = contrast
+                  spans[1].style.color = contrast
 
-               color_display.append(color)
-               color.append(...spans)
+                  spans[0].textContent = colors[i][1]
+                  spans[1].textContent = colors[i][0]
 
-            }
-         </script>
+                  spans[1].addEventListener('click', async evt => {
+                     await navigator.clipboard.writeText(evt.target.textContent)
+                  })
+
+                  color_display.append(color)
+                  color.append(...spans)
+
+               }
+            </script>
+
+         </article>
 
       </main>
 

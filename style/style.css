@@ -142,22 +142,26 @@ main {
 }
 
 .colors {
+   padding: 1rem 2rem;
+}
+
+.colors article {
    display: flex;
    flex-wrap: wrap;
    align-items: start;
    justify-content: space-around;
    font-size: large;
-   padding: 1rem;
+   padding: 1rem 0;
    gap: .5rem;
 }
 
-.colors div {
+.colors article div {
    display: grid;
    grid-template-rows: 10rem auto;
    width: 15rem;
 }
 
-.colors div span {
+.colors article span {
    display: flex;
    padding: .25rem .5rem;
    background-position: center;
@@ -166,19 +170,19 @@ main {
    align-items: end;
 }
 
-.colors div span:first-child {
+.colors article span:first-child {
    border-bottom: 1px solid var(--clr-lgh-0);
 }
 
-.colors div span:last-child {
+.colors article span:last-child {
    transition: background-color .25s;
 }
 
-.colors div span:last-child:hover {
+.colors article span:last-child:hover {
    background-color: #4c06ff77;
 }
 
-.colors div span:last-child:active {
+.colors article span:last-child:active {
    background-color: #0f07;
 }
 
