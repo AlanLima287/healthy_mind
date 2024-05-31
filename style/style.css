@@ -114,7 +114,7 @@ main {
 
 .downloads div {
    display: grid;
-   grid-template-columns: auto 1fr 5rem 5rem;
+   grid-template-columns: auto 1fr auto auto;
    align-items: center;
    gap: 1rem;
 }
@@ -138,6 +138,7 @@ main {
    background-color: var(--clr-lgh-2);
    border-radius: .125rem;
    text-align: center;
+   padding: .25rem;
 }
 
 .colors {
@@ -174,7 +175,7 @@ main {
 }
 
 .colors div span:last-child:hover {
-   background-color: #0007;
+   background-color: #4c06ff77;
 }
 
 .colors div span:last-child:active {
