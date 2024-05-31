@@ -22,7 +22,8 @@
    --clr-drk-1: #0c0421;
    --clr-drk-2: #1f0a52;
    --clr-drk-3: #3b139d;
-   --clr-drk-4: #28203c;
+   --clr-drk-4: #2754cf;
+   --clr-drk-5: #28203c;
 }
 
 body {
@@ -134,7 +135,7 @@ main {
 }
 
 .downloads a {
-   border: 1px solid var(--clr-drk-4);
+   border: 1px solid var(--clr-drk-5);
    background-color: var(--clr-lgh-2);
    border-radius: .125rem;
    text-align: center;
@@ -306,7 +307,7 @@ article.banner .address {
 /* Footer style */
 
 footer {
-   background-color: var(--clr-drk-1);
+   background-color: var(--clr-drk-0);
    padding: .5rem .75rem;
 }
 
