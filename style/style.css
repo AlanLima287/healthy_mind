@@ -115,7 +115,7 @@ main {
 
 .downloads div {
    display: grid;
-   grid-template-columns: auto 1fr auto auto;
+   grid-template-columns: auto 1fr auto;
    align-items: center;
    gap: 1rem;
 }
@@ -134,12 +134,18 @@ main {
    height: 5rem;
 }
 
+.downloads span:last-of-type {
+   display: flex;
+   gap: .25rem;
+}
+
 .downloads a {
    border: 1px solid var(--clr-drk-5);
    background-color: var(--clr-lgh-2);
    border-radius: .125rem;
    text-align: center;
    padding: .25rem;
+   flex: 1 1 100%;
 }
 
 .colors {
@@ -159,7 +165,9 @@ main {
 .colors article div {
    display: grid;
    grid-template-rows: 10rem auto;
-   width: 15rem;
+   min-width: 15rem;
+   max-width: 20rem;
+   flex-grow: 1;
 }
 
 .colors article span {
@@ -352,6 +360,16 @@ footer .license {
    header .logo {
       background-image: url(../assets/logo_small_black.png);
       aspect-ratio: 1 / 1;
+   }
+
+   .downloads div {
+      /* display: flex; */
+      grid-template-columns: auto;
+
+   }
+
+   .downloads div img {
+      justify-self: center;
    }
 
    article.banner {

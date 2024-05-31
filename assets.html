@@ -38,7 +38,7 @@
                ["./assets/icon.png", "Ícone da página web"],
                
                ["./assets/logo_small.png", "Logo Simples, sem texto"],
-               ["./assets/logo_small_black.png", "Logo Simples, com texto - preta"],
+               ["./assets/logo_small_black.png", "Logo Simples, sem texto - preta"],
    
                ["./assets/logo_large.png", "Logo Larga, com texto"],
                ["./assets/logo_large_black.png", "Logo Larga, com texto - preta"],
@@ -52,6 +52,8 @@
    
                const image = document.createElement('img')
                const alt_text = document.createElement('span')
+               const links = document.createElement('span')
+
                const visualize = document.createElement('a')
                const download = document.createElement('a')
    
@@ -66,8 +68,9 @@
                download.textContent = 'Download'
                download.download = asset[0].split('/')[2]
                download.href = asset[0]
-   
-               div.append(image, alt_text, visualize, download)
+               
+               links.append(visualize, download)
+               div.append(image, alt_text, links)
                downloads.append(div)
             }
    
