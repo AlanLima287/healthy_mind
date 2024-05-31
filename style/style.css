@@ -105,6 +105,7 @@ main {
    font-size: xx-large;
    place-content: center;
    text-align: center;
+   margin: 5rem 1rem;
 }
 
 .downloads {
@@ -166,7 +167,7 @@ main {
    display: grid;
    grid-template-rows: 10rem auto;
    min-width: 15rem;
-   max-width: 20rem;
+   max-width: 23rem;
    flex-grow: 1;
 }
 
