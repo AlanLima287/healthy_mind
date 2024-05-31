@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/icon.png" type="image/png">
+   <link rel="stylesheet" href="./style/style.css">
+   <title>Healthy Mind</title>
+
+   <!-- <script type="module" src="./script/main.js"></script> -->
+</head>
+
+<body>
+
+   <header>
+      
+      <a class="logo" href="./"></a>
+      
+      <nav>
+         <a href="./">Página Inicial</a>
+         <a>Lorem</a>
+         <a>ipsum</a>
+         <a>dolor</a>
+         <a>sit</a>
+         <a>amet</a>
+         <a>Quem Somos</a>
+      </nav>
+      
+   </header>
+   
+   <section>
+
+      <main class="downloads">
+   
+         <script>
+   
+            const downloads = document.querySelector('.downloads')
+            const assets = [
+               ["./assets/icon.png", "Ícone da página web"],
+               
+               ["./assets/logo_small.png", "Logo Simples, sem texto"],
+               ["./assets/logo_small_black.png", "Logo Simples, com texto - preta"],
+   
+               ["./assets/logo_large.png", "Logo Larga, com texto"],
+               ["./assets/logo_large_black.png", "Logo Larga, com texto - preta"],
+               ["./assets/logo_large_colored.png", "Logo Larga, com texto - colorida"],
+            ]
+   
+            for (let i = 0; i < assets.length; i++) {
+               const asset = assets[i];
+   
+               const div = document.createElement('div')
+   
+               const image = document.createElement('img')
+               const alt_text = document.createElement('span')
+               const visualize = document.createElement('a')
+               const download = document.createElement('a')
+   
+               image.src = asset[0];
+               image.alt = asset[1];
+   
+               alt_text.textContent = asset[1];
+   
+               visualize.textContent = 'Visualizar'
+               visualize.href = asset[0]
+   
+               download.textContent = 'Download'
+               download.download = asset[0].split('/')[2]
+               download.href = asset[0]
+   
+               div.append(image, alt_text, visualize, download)
+               downloads.append(div)
+            }
+   
+         </script>
+   
+      </main>
+      
+      <footer id="footer">
+
+         <div class="social">
+            <h1>Você pode nos encontrar aqui!</h1>
+            
+         </div>
+
+         <div class="teams">
+
+            <ul>
+               <h1>Equipe de Marketing</h1>
+               <li>Alan Barbosa Lima</li>
+               <li>Juan Pablo Ferreira Costa</li>
+               <li>Otávio Gomes Calazans</li>
+            </ul>
+
+            <ul>
+               <h1>Equipe de Produção & Inovação</h1>
+               <li>João Pedro Brant Santos</li>
+               <li>Luiz Felipe Melo Oliveira</li>
+               <li>Luan Filipe Oliveira de Carvalho</li>
+               <li>Mateus Oliveira Silva</li>
+            </ul>
+
+            <ul>
+               <h1>Equipe de Pesquisa</h1>
+               <li>Breno Augusto Braga Oliveira</li>
+               <li>Lucas Henrique Rocha de Aquino</li>
+               <li>Lucas Rocha Oliveira</li>
+               <li>Vitor Mozer Vieira Sales</li>
+            </ul>
+
+         </div>
+
+         <div class="license">
+            Healthy Mind&reg; 2024 Nenhum direito reservado - Livre de Copyright &copy;
+            <br>
+            Este site é um projeto acadêmico da disciplina de Administração
+         </div>
+
+      </footer>
+
+   </section>
+
+</body>
+
+</html>
