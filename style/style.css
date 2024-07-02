@@ -216,13 +216,13 @@ main {
    position: relative;
    place-items: center;
    background-size: contain;
-   background-image: url(../assets/logo_small.png);
-   border: .25rem solid var(--clr-drk-2);
-   background-color: var(--clr-drk-2);
+   background-image: url(../assets/logo_small_black.png);
    border-radius: .5rem;
    aspect-ratio: 1 / 1;
    margin: .25rem 0;
    height: 2rem;
+
+   filter: invert(10%) sepia(55%) saturate(6293%) hue-rotate(258deg) brightness(54%) contrast(104%);
 }
 
 .slogan picture::before,
@@ -332,6 +332,18 @@ footer h1 {
 
 footer .social {
    text-align: center;
+}
+
+footer .social img {
+   height: 2.25rem;
+   filter: invert();
+   cursor: pointer;
+   transition: .25s;
+}
+
+footer .social img:hover {
+   translate: 0 -5%;
+   filter: invert(40%) sepia(76%) saturate(1088%) hue-rotate(227deg) contrast(87%);
 }
 
 footer .teams {
