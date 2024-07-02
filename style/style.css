@@ -23,7 +23,6 @@
    --clr-drk-2: #1f0a52;
    --clr-drk-3: #3b139d;
    --clr-drk-4: #2754cf;
-   --clr-drk-5: #28203c;
 }
 
 body {
@@ -141,7 +140,7 @@ main {
 }
 
 .downloads a {
-   border: 1px solid var(--clr-drk-5);
+   border: 1px solid var(--clr-drk-2);
    background-color: var(--clr-lgh-2);
    border-radius: .125rem;
    text-align: center;
@@ -250,10 +249,11 @@ article {
 
 article:nth-of-type(2n) {
    background-color: var(--clr-lgh-3);
+   /* color: var(--clr-drk-1); */
 }
 
 article:nth-of-type(2n) * {
-   color: var(--clr-lgh-1);
+   color: var(--clr-lgh-0);
 }
 
 /* Normal text style */
