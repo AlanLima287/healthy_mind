@@ -280,6 +280,19 @@ article.text p .figure.right {
    margin: 0 0 0 1rem;
 }
 
+article.partition {
+   display: grid;
+   grid-template-columns: auto 1fr;
+}
+
+article.partition h1 {
+   grid-column: span 2;
+}
+
+article.partition p:nth-of-type(2n) {
+   text-align: right;
+}
+
 /* Where and when to find us style */
 
 article.banner {
@@ -406,6 +419,16 @@ footer .license {
       float: none !important;
       margin: 0 !important;
       align-self: center;
+   }
+
+   article.partition {
+      display: flex;
+      flex-direction: column;
+   }
+
+   article.partition p:nth-of-type(2n):not(:last-of-type) {
+      padding-bottom: .5rem;
+      border-bottom: 1px dashed var(--clr-drk-2);
    }
 
    footer .teams {
