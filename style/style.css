@@ -107,6 +107,20 @@ main {
    margin: 5rem 1rem;
 }
 
+.error a {
+   text-decoration: underline;
+   color: var(--clr-drk-3);
+}
+
+.error a:hover {
+   color: var(--clr-lgh-4);
+}
+
+.error a:active {
+   text-decoration: underline;
+   color: var(--clr-drk-4);
+}
+
 .downloads {
    display: grid;
    padding: 1rem;
